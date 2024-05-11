@@ -3,7 +3,7 @@ import React from 'react'
 const Page = () => {
     return (
         <div className='flex flex-wrap justify-center'>
-            <p className="text-center mt-10 w-full font-bold">I want to get in</p>
+            <p className="text-center mt-10 w-full font-bold">I need to view</p>
             <div className="w-full max-w-xs mt-5">
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <div className="mb-4">
