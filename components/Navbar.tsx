@@ -10,7 +10,13 @@ const Navbar = () => {
             <MaxWidthWrapper>
                 <div className="flex h-14 items-center justify-between">
                     <Link href="/" className="flex z-40 font-semibold">
-                        <span className="text-xl"> <span className="text-indigo-600 text-3xl font-bold">B</span>etter <span className="text-indigo-600 text-3xl font-bold">B</span>engaluru </span>
+                        <div className="flex">
+                            <span className="text-indigo-600 text-6xl font-bold">B</span>
+                            <div className="mt-1">
+                                <p>etter</p>
+                                <p>engaluru</p>
+                            </div>
+                        </div>
                     </Link>
 
                     <div className="hidden items-center space-x-4 sm:flex">
