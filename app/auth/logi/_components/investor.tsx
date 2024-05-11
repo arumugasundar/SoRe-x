@@ -7,25 +7,33 @@ const Component = () => {
   return (
     <Card>
         <CardHeader>
-            <CardTitle> Card Title </CardTitle>
-            <CardDescription> tagline - to express the willingness to point out societal issues </CardDescription>
+            <CardTitle>Investor</CardTitle>
+            <CardDescription>Welcome to the world of bright ideas. An opportunity to fuel the passion in people.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2">
-            <div className="space-y-1">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" defaultValue="Pedro Duarte" />
+        <div className="space-y-1">
+                <Label htmlFor="Name">Name</Label>
+                <Input id="Name" defaultValue="" />
+            </div>
+        <div className="space-y-1">
+                <Label htmlFor="Phone">Phone</Label>
+                <Input id="Phone" defaultValue="" />
             </div>
             <div className="space-y-1">
-                <Label htmlFor="username">Username</Label>
-                <Input id="username" defaultValue="@peduarte" />
+                <Label htmlFor="Email">Email</Label>
+                <Input id="Email" defaultValue="" />
+            </div>
+            <div className="space-y-1">
+                <Label htmlFor="OTP">OTP</Label>
+                <Input id="OTP" defaultValue="" />
             </div>
             <div className="flex justify-around">
                 
             </div>
         </CardContent>
-        <CardFooter> 
+        <CardFooter className="w-full flex justify-around"> 
             <Button> LogIn </Button>
-            <Button> SignUp </Button>
+            <Button> Generate OTP </Button>
         </CardFooter>
     </Card>
   )
