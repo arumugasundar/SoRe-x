@@ -13,7 +13,7 @@ export default async function Home() {
           Igniting Innovative Ventures for a Positive <span className="text-indigo-600"> Social </span> Change
         </h1>
         <p className="mt-5 max-w-prose text-zinc-500 sm:text-lg">
-          A dynamic platform linking aspiring social entrepreneurs with visionary investors for a social cause
+          A dynamic platform ingniting a sense of responsibility in public and linking aspiring social entrepreneurs with visionary investors for a social cause
         </p>
 
         <Link
