@@ -21,7 +21,7 @@ export default async function Home() {
             size: "lg",
             className: "mt-5",
           }), "text-indigo-600")}
-          href="/#"
+          href="/auth/register"
         >
           Get Started <ArrowRight className="ml-2 h-5 w-5" />
         </Link>

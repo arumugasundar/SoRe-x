@@ -7,15 +7,15 @@ const Component = () => {
   return (
     <Card>
         <CardHeader>
-            <CardTitle> Public </CardTitle>
-            <CardDescription>Be a responsible citizen. Dive into this section to report any critical issue that needs to be addressed.</CardDescription>
+            <CardTitle>Entrepreneur</CardTitle>
+            <CardDescription>Be the change to bring the change. Have a vibrant solution to a sensible problem? Here&apos;s the platform to pitch and shape your ideas.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2">
-           <div className="space-y-1">
+        <div className="space-y-1">
                 <Label htmlFor="Name">Name</Label>
                 <Input id="Name" defaultValue="" />
             </div>
-            <div className="space-y-1">
+        <div className="space-y-1">
                 <Label htmlFor="Phone">Phone</Label>
                 <Input id="Phone" defaultValue="" />
             </div>
@@ -32,7 +32,7 @@ const Component = () => {
             </div>
         </CardContent>
         <CardFooter className="w-full flex justify-around"> 
-            <Button> Authenticate </Button>
+            <Button> LogIn </Button>
             <Button> Generate OTP </Button>
         </CardFooter>
     </Card>

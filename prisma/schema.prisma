@@ -24,7 +24,7 @@ model User {
   password String
 
   gender String
-  age Int
+  age String
   active Boolean
   
 }
@@ -132,7 +132,8 @@ model BusinessIdeas {
 model OTP {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   type String
-  value String
+  value String @unique
+  otp String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
