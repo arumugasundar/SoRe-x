@@ -1,10 +1,12 @@
+import { Button } from '@/components/ui/button'
 import React from 'react'
+import AddIssues from './_components/add-issue';
 
 const Page = () => {
-  return (
-    <section className="flex justify-center m-2 p-2 mt-24">
-        Home
-    </section>
+  return (    
+      <>
+        <AddIssues />
+      </>
   )
 }
 
