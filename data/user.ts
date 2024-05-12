@@ -31,7 +31,6 @@ export const createUser = async ( name: String, gender: String, age: String, ema
 export const login = async (email: String, password: String) => {
     try {
         const res = await db.user.findFirst({where : { email, password}})
-        console.log('res :', res);
         return res;
     } catch (error) {
         console.log('error :', error?.toString())

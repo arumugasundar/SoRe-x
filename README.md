@@ -1,36 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is build with respect to the social responsibility in the responsible citizens and them making the people who is ruling responsible to solve the problems.
+This has 2 sections, one is public and the other is Connekt.
+Public section - here the public can register and login and submit the issue or problem that needs the serious addressal and causing serious problems. Once they post it, they can be viewed by conserned authorities using official login section in main page and they can acknowledge and address it. This process will be transparent and shows the efficiency and responsibility of the people ruling.
 
-## Getting Started
+nsecond section is Connekt, which brings entrepreneurs and investors together, entrepreneurs can try to address the problem from first section or their own ideas and pitch to investor and this would be a great platform for both of them to connect.
+Kindly refer to the video attached for the detailed understanding the work flow.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://drive.google.com/drive/folders/1834Kz0xZ6Uz8pMNsFE_DWz9OXBMH8AjM?usp=drive_link

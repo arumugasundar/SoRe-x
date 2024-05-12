@@ -56,6 +56,8 @@ const Navbar = () => {
                                 > Login </div>
                             }
                             
+                            <Link href="/auth/login" className={cn( buttonVariants({ variant: "outline", size: 'lg' }), "bg-indigo-600") }> Official Login </Link>
+
                             <Link href="/home" className={cn( buttonVariants({ variant: "outline", size: 'lg' }), "bg-indigo-600") }> Home </Link>
 
                             {

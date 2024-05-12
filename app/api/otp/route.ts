@@ -1,7 +1,7 @@
 import { NextApiRequest } from "next";
 import { sendOtp } from "@/data/otp";
 
-const POST = async (request: NextApiRequest) => {
+const POST = async (request: Request) => {
     let payload = await request.json();
     const { type, value } = payload;
     const response = await sendOtp(type, value);

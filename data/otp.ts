@@ -7,7 +7,6 @@ export const sendOtp = async (type: string, value: string) => {
         const max = 999999;
         const otp = Math.floor(Math.random() * (max - min + 1)) + min;
         const res = await db.OTP.create({ data : {type, value, otp:`${otp}` }})
-        console.log('res :', res);
         return res
     } catch (error) {
         console.log('error :', error?.toString())

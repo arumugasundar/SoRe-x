@@ -6,7 +6,7 @@ const GET = async () => {
     return Response.json(response)
 }
 
-const POST = async (request: NextApiRequest) => {
+const POST = async (request: Request) => {
     let payload = await request.json();
     const { name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword, userType  } = payload;
     const response = await createUser(name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword, userType)

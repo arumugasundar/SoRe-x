@@ -32,63 +32,31 @@ const Component = () => {
     <Dialog>
       <DialogTrigger asChild>
         <div className="w-full flex justify-end">
-            <Button variant="outline" size={"lg"} className="bg-indigo-600 text-white text-2xl mx-auto mt-44"> <Plus size={40} /> Report Issue </Button>
+            <Button variant="outline" size={"lg"} className="bg-indigo-600 text-white text-2xl mx-auto mt-44"> <Plus size={40} /> Submit Ideas </Button>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[800px] h-[540px] overflow-auto">
         <DialogHeader>
-          <DialogTitle> Issue Report </DialogTitle>
-          <DialogDescription className="mt-2"> tagline - to convey the expectations of how the issue reporting should be </DialogDescription>
+          <DialogTitle> Fuel your passion </DialogTitle>
+          <DialogDescription className="mt-2"> To describe a bit on idea you wish to pitch </DialogDescription>
         </DialogHeader>
 
-        <div className="flex w-full gap-2">
-          <div>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="bg-indigo-600 p-1 m-1 rounded-sm"> {place} </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setPlace('Bengaluru Urban')}> Bengaluru Urban </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setPlace('Bengaluru Rural')}> Bengaluru Rural </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-
-          <div>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="bg-indigo-600 p-1 m-1 rounded-sm"> {locality} </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setLocality('Koramangala')}> Koramangala </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLocality('Indiranagar')}> Indiranagar </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        </div>
-        
-
-
-
         <div className="flex flex-wrap justify-around">
-        <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="image"> Upload Image </Label>
-            <Input
-              type="file"
-              className="shadow-lg border-2 border-indigo-600"
-              id="image"
-            />
-          </div>
 
         <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="description"> Description </Label>
+            <Label htmlFor="description"> Is the idea already funded? </Label>
             <Input
               type="text"
               className="shadow-lg border-2 border-indigo-600"
               id="description"
               value={description}
+              placeholder="yes or no"
               onChange={(e) => setDescription(e?.target?.value)}
             />
           </div>
 
           <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="department"> Department </Label>
+            <Label htmlFor="department"> Problem Statement </Label>
             <Input
               type="text"
               className="shadow-lg border-2 border-indigo-600"
@@ -99,7 +67,7 @@ const Component = () => {
           </div>
 
           <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="severity"> Severity </Label>
+            <Label htmlFor="severity"> Description of Solution </Label>
             <Input
               type="text"
               className="shadow-lg border-2 border-indigo-600"
@@ -110,7 +78,7 @@ const Component = () => {
           </div>
 
           <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="severity_reason"> severity Reason </Label>
+            <Label htmlFor="severity_reason"> Why should we fund you? </Label>
             <Input
               type="text"
               className="shadow-lg border-2 border-indigo-600"
@@ -120,30 +88,32 @@ const Component = () => {
             />
           </div>
 
-          <div className="w-5/12 m-1 p-1">
-            <Label htmlFor="issue_persists_since"> Issue Persists Since </Label>
+          <div className="w-11/12 m-1 p-1">
+            <Label htmlFor="image"> Upload Files (if any) </Label>
             <Input
-              type="text"
+              type="file"
               className="shadow-lg border-2 border-indigo-600"
-              id="issue_persists_since"
-              value={issuePersistsSince}
-              onChange={(e) => setIssuePersistsSince(e?.target?.value)}
+              id="image"
             />
           </div>
+          
 
-          <div className="w-11/12 m-1 p-1">
-            <Label htmlFor="add_location"> Add Location </Label>
+          <div className="w-5/12 m-1 p-1">
+            <Label htmlFor="add_location"> Connect with me/us (to be filled by investors) </Label>
+
             <Input
               type="text"
               className="shadow-lg border-2 border-indigo-600"
               id="add_location"
               value={addLocation}
+              suffix={<Button type="button" className="bg-indigo-600 text-white p-2"> Connect</Button>}
+              placeholder="I am interested in this idea"
               onChange={(e) => setAddLocation(e?.target?.value)}
             />
           </div>
         </div>
 
-        <DialogFooter>
+        <DialogFooter className="w-full flex justify-between">
           <Button type="submit" className="bg-indigo-600 text-white">Save changes</Button>
         </DialogFooter>
       </DialogContent>
