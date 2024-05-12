@@ -26,6 +26,7 @@ model User {
   gender String
   age String
   active Boolean
+  type String
   
 }
 

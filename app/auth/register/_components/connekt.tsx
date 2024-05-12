@@ -24,6 +24,7 @@ const Component = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [gender, setGender] = useState("");
     const [age, setAge] = useState("");
+    const [userType, setUserType] = useState("business");
 
     const sendOtp = async (type: string, value: string) => {
     
@@ -44,8 +45,8 @@ const Component = () => {
     
       const submitHandler = async () => {
         
-        if(name && gender && age && email && emailOtp && phone && phoneOtp && password && confirmPassword){
-          let payload = { name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword };
+        if(name && gender && age && email && emailOtp && phone && phoneOtp && password && confirmPassword && userType){
+          let payload = { name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword, userType };
           
           const myHeaders = new Headers();
           myHeaders.append("Content-Type", "application/json");

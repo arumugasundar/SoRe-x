@@ -8,8 +8,8 @@ const GET = async () => {
 
 const POST = async (request: NextApiRequest) => {
     let payload = await request.json();
-    const { name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword  } = payload;
-    const response = await createUser(name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword)
+    const { name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword, userType  } = payload;
+    const response = await createUser(name, gender, age, email, emailOtp, phone, phoneOtp, password, confirmPassword, userType)
     return Response.json(response);
 }
 

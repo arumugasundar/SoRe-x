@@ -20,14 +20,20 @@ const Page = () => {
     if (email && password) {
       const myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      const raw = JSON.stringify({ "email": "bob@gmail.com", "password": "password" });
+      const raw = JSON.stringify({ "email": `${email}`, "password": `${password}` });
       const requestOptions: any = { method: "POST", headers: myHeaders, body: raw, redirect: "follow" };
       
       let res: any = await fetch("/api/login", requestOptions)
       res = await res.json();
       if(res?.id){
         localStorage.setItem("user_id", res?.id);
-        router.push('/home');
+        localStorage.setItem("user_type", res?.type);
+
+        if(res?.type === 'business'){
+          router.push('/connekt')
+        } else {
+          router.push('/home');
+        }
       } else {
         toast("invalid creds", { className: "toast-error" });
       }

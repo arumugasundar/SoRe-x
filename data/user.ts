@@ -11,13 +11,13 @@ export const getUsers = async () => {
     }
 }
 
-export const createUser = async ( name: String, gender: String, age: String, email: String, email_otp: String, phone: String, phone_otp: String, password: String, confirmPassword: String ) => {
+export const createUser = async ( name: String, gender: String, age: String, email: String, email_otp: String, phone: String, phone_otp: String, password: String, confirmPassword: String, userType: String ) => {
     try {
         let phone_otp_in_db = await getOTPbyPhone(phone);
         let email_otp_in_db = await getOTPbyEmail(email);
         
         if(password === confirmPassword && phone_otp === phone_otp_in_db && email_otp === email_otp_in_db){
-            const res = await db.user.create({ data : { name, gender, age, email, phone, password, active: true }})
+            const res = await db.user.create({ data : { name, gender, age, email, phone, password, active: true, type: userType }})
             return res;
         }
         return null;
